@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man Arcade</title>
+    <link rel="stylesheet" href="Pac-Man.css">
+</head>
+<body>
+
+    <header>
+        <h1>PAC-MAN</h1>
+        <p>ARCADE CLASSIC</p>
+    </header>
+
+    <main>
+        <section class="informacoes">
+            <div>
+                <span>PONTUAÇÃO</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div>
+                <span>VIDAS</span>
+                <strong id="lives">3</strong>
+            </div>
+        </section>
+
+        <div class="game-container">
+            <canvas id="game"></canvas>
+        </div>
+
+        <div id="message">
+            <h2 id="message-title">PAC-MAN</h2>
+            <p id="message-text">Colete todos os pontos e fuja dos fantasmas!</p>
+            <button id="restart">JOGAR NOVAMENTE</button>
+        </div>
+
+        <p class="controles">
+            CONTROLES: ↑ ↓ ← → ou W A S D
+        </p>
+    </main>
+
+    <script src="PAC-MAN.js"></script>
+</body>
+</html>

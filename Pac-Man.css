@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050505;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+}
+
+header {
+    padding: 25px;
+}
+
+header h1 {
+    color: #ffe600;
+    font-size: 48px;
+    letter-spacing: 8px;
+    text-shadow: 0 0 15px #ffe600;
+}
+
+header p {
+    color: #777;
+    letter-spacing: 5px;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+main {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    padding: 10px;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+    padding: 15px;
+    background: #111;
+    border: 1px solid #333;
+}
+
+.informacoes div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.informacoes span {
+    color: #999;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.informacoes strong {
+    color: #ffe600;
+    font-size: 25px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #000;
+    border: 2px solid #172bff;
+    box-shadow: 0 0 20px #172bff55;
+}
+
+canvas {
+    width: 100%;
+    max-width: 504px;
+    height: auto;
+    display: block;
+    image-rendering: pixelated;
+}
+
+.controles {
+    margin-top: 20px;
+    color: #888;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+#message {
+    margin-top: 20px;
+    padding: 15px;
+}
+
+#message h2 {
+    color: #ffe600;
+    margin-bottom: 10px;
+}
+
+#message p {
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #ffe600;
+    color: #000;
+    border: none;
+    padding: 13px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 35px;
+    }
+
+    main {
+        padding: 5px;
+    }
+}
